@@ -1,0 +1,33 @@
+{
+  "name": "browser-jsencrypt",
+  "version": "0.0.0",
+  "description": "Public and private key encryption that works in the browser",
+  "main": "src/jsencrypt.js",
+  "bin": {
+    "browser-jsencrypt": "jsencrypt.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccheever/jsencrypt.git"
+  },
+  "keywords": [
+    "jsencrypt"
+  ],
+  "author": "Travis Tidwell, packaged by Charlie Cheever <ccheever@gmail.com>",
+  "license": "LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/ccheever/jsencrypt/issues"
+  },
+  "homepage": "https://github.com/ccheever/jsencrypt",
+  "dependencies": {
+    "jsbn": "0.0.0",
+    "asn1js": "git://github.com/ccheever/asn1js",
+    "jsrsasign": "0.0.3"
+  }
+}

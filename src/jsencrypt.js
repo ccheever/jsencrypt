@@ -1,3 +1,8 @@
+var ASN1 = require('asn1js');
+var jsrsasign = require('jsrsasign');
+var RSAKey = jsrsasign.RSAKey;
+
+
 /**
  * Retrieve the hexadecimal value (as a string) of the current ASN.1 element
  * @returns {string}
@@ -476,3 +481,4 @@ JSEncrypt.prototype.getPublicKeyB64 = function() {
     return this.getKey().getPublicBaseKeyB64();
 };
 
+module.exports = JSEncrypt;
