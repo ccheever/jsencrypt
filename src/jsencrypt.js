@@ -409,6 +409,8 @@ JSEncrypt.prototype.encrypt = function(string) {
     try{
         return hex2b64(this.getKey().encrypt(string));
     }catch(ex){
+        JSEncrypt.EXCEPTION = ex;
+        console.log("exception:", ex);
         return false;
     }
 };
